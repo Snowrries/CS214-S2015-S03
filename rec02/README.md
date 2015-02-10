@@ -46,8 +46,8 @@ http://www.gnu.org/software/libc/manual/html_node/index.html
 ### Preprocessor Macros
 * We'll go into the gory details later in the semester but for now I'll say this. When you "compile" your code, you're actually doing a series of different things.
 * Preprocessing is the first step in the compilation process.
-* In short, the preprocessor is a simple text replacement tool. Simple in the sense that it's **very important** you understand it simply does text replacement. 
-* The preprocessor takes various directives (the lines that begin with `#`) and performs text replacement
+* In short, the preprocessor is a simple text replacement tool. Simple in the sense that it's **very important** you understand it doesn't think beyond the replacement.
+* The preprocessor takes various directives (the lines that begin with `#`) and replaces text in your source file before passing it to the compiler.
     * The `#include`, quite literally, takes the source code from the specified file and injects it into your code. 
     * The `-E` flag will stop gcc after preprocessing. Write a simple miniature program (that includes stdio.h), add the `-E` flag to gcc when compiling, and then take a look at the output file.
     
