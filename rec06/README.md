@@ -28,10 +28,22 @@ This assignment is (by design) much more complex than the previous ones so I hop
 * **THINK BEFORE YOU CODE**
 * A solid understanding of data structures is critical for this assignment.
 
-### Testing Correctness
+### Testing
+
+#### Functional Correctness
 * You can use the `find` command walk your directory structure
     * `find .` will display the file tree from your current directory down.
 * You can use the `file` command to determine if a file is ASCII or not
+* If you aren't familiar with a debugger (like gdb or lldb) now is probably a good time to fix that.
+
+#### Code Quality
+By now you've probably realized that 'code quality' thing on the syllabus is for real. Among other things we test your code for memory leaks and general bad behavior (poor assumptions, poor style, undefined behavior). `valgrind` and `gdb` are useful tools for warning you about the sacriligious aspects of your implementation and digging yourself out of your segfaulting hellscape when your code takes you there respectively.
+
+Stanford has brief tutorials for getting your feet wet with both of these tools. I highly recommend taking a look.
+
+* http://web.stanford.edu/class/cs107/guide_valgrind.html
+* http://web.stanford.edu/class/cs107/guide_gdb.html
+
 
 ### Binary Files
 Part of this assignment is determining whether or not files are binary or not. For the purposes of our definition a file is considered binary if it is not a "valid ASCII text file." 
