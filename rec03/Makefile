@@ -10,7 +10,7 @@ _MKDIRS := $(shell for dir in $(REQUIRED_DIRS); \
 		[[ -d $$dir ]] || mkdir -p $$dir; \
 	done)
 
-debug: CFLAGS = -Wall -std=c11 -g
+debug: CFLAGS = -Wall -std=c99 -g
 debug: all
 
 all: some_strings funcptrs
